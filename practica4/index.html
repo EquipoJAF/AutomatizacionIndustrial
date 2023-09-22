@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 3 | Ibero Puebla</title>
+        <title>Práctica 4 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 3: Electrotecnia (Simulada y Práctica presencial)</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 4: Motores</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/brobot.jpg" alt="..." />
@@ -63,10 +63,10 @@
 
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 22, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Electrotecnia</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Enclavamiento en cascada</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Motores</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >FluidSIM</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Motores AC trifásicos</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Motores DC</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Relevadores</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Bobinas</a>
 
                     </header>
                 </div>
@@ -80,10 +80,10 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4"> Se llevaron a cabo nueve simulaciones de diversos circuitos con el propósito de validar la efectividad de ciertos principios antes de su implementación en un entorno físico. En la construcción física, se utilizó un conjunto de terminales de conexión (clemas) para facilitar múltiples conexiones, además de una fuente de corriente continua (DC) para gestionar los indicadores visuales (focos) y un motor monofásico.</p>
+                        <p class="fs-6 mb-4"> En esta práctica se realizará cuatro circuitos para el uso y entendimiento de los motores en AC y DC, donde se crearán 4 circuitos para  poder observar el funcionamiento en conjunto de los motores y los componentes que se usarán para emular las compuertas lógicas, además de probar en cada circuito el botón que será un paro de emergencia el cual como dice su nombre detendrá el sistema  sin importar el proceso que estuviera hecho.</p>
                        <!-- <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Objetivo General -</h2>
-                        <p class="fs-6 mb-4">Conocer, investigar e identificar los elementos electromecánicos utilizados en la electrotecnia.  </p>
+                        <p class="fs-6 mb-4">Conocer, investigar e identificar el funcionamiento de los motores DC, AC (monofásicos y trifásicos).</p>
                        <!--<h2 class="fw-bolder mb-4 mt-5 fs-5" >- Objetivos especificos -</h2>
                         <p class="fs-6 mb-4">•	Identifica cada uno de los componentes de cada circuito y realiza una tabla comparativa con su función, simbología y foto de componente real.</p>
                         <p class="fs-6 mb-4">•	Realiza la simulación de cada circuito, graba un video del funcionamiento y adjunta mediante un enlace al reporte de práctica </p>
@@ -91,42 +91,90 @@
 
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En la búsqueda constante de aprender y mejorar de sistemas eléctricos y electrónicos, se realizaron una serie de nueve simulaciones exhaustivas de circuitos diversos. El objetivo principal de estas simulaciones radicaba en verificar la efectividad de los fundamentos teóricos subyacentes antes de llevar a cabo su aplicación en un entorno físico tangible. Este proceso no solo implicó el análisis y diseño de los circuitos en un ambiente virtual, sino que también incluyó la materialización de estos diseños en una construcción física. Para lograrlo, se emplearon terminales de conexión, conocidas como "clemas", que permitieron establecer múltiples conexiones de manera eficiente. </p>
-                        <p class="fs-6 mb-4">Asimismo, se hizo uso de una fuente de corriente continua (DC) para controlar con precisión los indicadores visuales, como los focos, y se incorporó un motor monofásico en esta experiencia de investigación. En esta introducción, exploraremos con más detalle el proceso y los resultados de estas simulaciones y construcciones físicas, arrojando luz sobre la valiosa contribución que han hecho al avance de nuestro conocimiento en el campo de la ingeniería eléctrica.</p>
+                        <p class="fs-6 mb-4">Los motores trifásicos son componentes esenciales en numerosas aplicaciones industriales y comerciales, ya que proporcionan una fuente de energía mecánica para una variedad de maquinarias y sistemas. Comprender su funcionamiento, control y mantenimiento es fundamental para garantizar un rendimiento eficiente y seguro para los entornos industriales. En esta práctica explicaremos cómo conectar, arrancar y controlar un motor trifásico. </p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Se utilizaron lo siguiente:</p>
-                        <p class="fs-6 mb-4">1 clavija monofásica, 1 Fuente de DC a 24v, 1 interruptor termomagnético, 2 relevadores, 1 contactor, 2 focos, 1 motor monofásico, clemas, cables y herramientas para conectar (destornilladores).</p>
-                        
+                        <p class="fs-6 mb-4">Los materiales que se usaron fueron para cada práctica fueron:</p>
+                        <p class="fs-6 mb-4">●	Circuito 2</p>
+                        <p class="fs-6 mb-4">3 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), 2 relevadores, un contactor, una clavija, un interruptor termomagnético, motor DC, un paro de emergencia, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
+                        <p class="fs-6 mb-4">●	Circuito 3</p>
+                        <p class="fs-6 mb-4">3 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), un relevador, línea trifásica, un interruptor termomagnético, un paro de emergencia, motor trifasico, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
+                        <p class="fs-6 mb-4">●	Circuito 4</p>
+                        <p class="fs-6 mb-4">Un led, 3 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), un relevador, línea trifásica, un contactor, un interruptor termomagnético, un paro de emergencia, motor trifasico, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
+                        <p class="fs-6 mb-4">●	Circuito 5</p>
+                        <p class="fs-6 mb-4">3 leds, 2 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), 2 botones selector de 2 posiciones, 3 relevadores, línea trifásica, 2 contactores, un interruptor termomagnético, un paro de emergencia, motor trifasico, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
+                        <p class="fs-6 mb-4">En la figura 1 se observa los componentes utilizados en esta práctica.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tablac1.png" alt="" /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tablac2.png" alt="" /></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Tabla comparativa de los componentes usados</p>
+
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
                         <p class="fs-6 mb-4">Se inicio realizando las simulaciones de los siguientes ejercicios, los cuales tienen como finalidad que comprobemos el funcionamiento de los distintos componentes que se van a emplear en los ejercicios armados en físico. </p>
                         <!--<p class="fs-6 mb-4"> comentario </p>-->
-                        
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Los esquemas de las simulaciones fueron provistos por el docente</p>
-                            <!--<p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
-                    
+                                
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Los diseños fueron provistos por el docente.</p>
+                            <p class="fs-6 mb-4">A continuación se muestran los diagramas que se llevaron a cabo en la práctica, provistos por el docente.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito1.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Circuito 1</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito2.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 3. Circuito 2</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito3.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 4. Circuiot 3</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito4.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 5. Circuito 4</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito5.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 6. Circuito 5</p>
                             
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">A continuación se muestran los videos de la simulación.</p>
+                            <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                                <source src="video/simulacion1.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 1: Simulación del motor DC con una dirección</p>
+                            <br>
+                            <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                                <source src="video/simulacion2.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 2: Simulación del motor DC con dos direcciones</p>
+                            <br>
+                            <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                                <source src="video/simulacion3.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 3: Simulación del motor monofásico con enclavamiento</p>
+                            <br>
+                            <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                                <source src="video/simulacion4.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 4: Simulación de motor trifásico con una dirección</p>
+                            <br>
+                            <figure class="mb-4" align="center"><video width="500" height="300"  controls>
+                                <source src="video/simulacion5.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 5: Simulación del motor trifásico con dos direcciones</p>
+                            <br>
 
+                                <!--<p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
+            
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">La construcción de los circuitos se base en los esquemas provistos por el docente y siempre cuidando el realizar las conexiones sin conectar el circuito al enchufe</p>
-                           
+                            <p class="fs-6 mb-4">Para la construcción de los circuitos se usaron los diagramas (circuito 1 al 5) y en las siguientes imagenes se pueden observar como quedaron en el tablero.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcircuito2.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcircuito4.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcircuito5.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 7. Circuitos armados en el tablero</p>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Realizamos los circuitos y comprobamos su correcto funcionamiento, así como las medidas de seguridad, encendido y apagado del todo el circuito. Pudiendo comprobar como encender un motor monofásico y emplear una fuente de DC como sistema de control de la iluminación de los indicadores.</p>
+                        <p class="fs-6 mb-4">Se puede ver como los circuitos funcionan adecuadamente donde se evitan hacer cortocircuito por una mala conexión entre los componentes, además de poder ver el funcionamiento y el control de los motores AC y DC como se pueden ver en los siguientes videos:</p>
                         <p class="fs-6 mb-4">Video de evidencia</p>
                         <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                             <source src="video/Circuito1.mp4" type="video/mp4">
                         </video></p></figure>
+
                         <br>
                         <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                             <source src="video/Simulacion.mp4" type="video/mp4">
@@ -134,20 +182,21 @@
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">The universe is large and old, and the ingredients for life </p>
-                        <p class="fs-6 mb-4">If you get.</p>
+                        <p class="fs-6 mb-4">Durante esta práctica, se logró un sólido entendimiento del funcionamiento de un motor trifásico. Se aprendió que estos motores funcionan gracias a la generación de campos magnéticos rotativos, lo que les permite generar movimiento mecánico a partir de energía eléctrica trifásica.
+                            esta práctica de uso de un motor trifásico brindó a los participantes conocimientos esenciales sobre cómo operar y controlar 
+                            </p>
                         
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">No usamos fuentes adicionales a las presentaciones del profesor</p>
+                        <p class="fs-6 mb-4">[1] Juan Carlos Martin, Maria Pilar Garcia. Automatismos Industriales. Madrid: Editorial Editex, S. A., 2009.</p>
                         
-                        <p id="descargables">
+                       <!-- <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
                         <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Circuitos.pdf">documento.pdf</a> </p>
-                      <!--  <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
                         <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
--->
+                        -->
                 </div>
             </section>
 
