@@ -64,7 +64,7 @@
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 30, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Electricidad AC</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Circuitos electricos</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Conexión de circuitos</a>
                         <a class="badge bg-primary text-decoration-none link-light" >FluidSIM</a>
 
                     </header>
@@ -84,7 +84,7 @@
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Un tablero eléctrico, también llamado panel de control o panel eléctrico, desempeña un papel crucial en cualquier sistema eléctrico. Su función principal radica en supervisar y repartir la electricidad en un edificio o sistema eléctrico específico. A la vez, cumple con la tarea de salvaguardar contra sobrecargas, cortocircuitos y otros incidentes eléctricos, al mismo tiempo que posibilita la administración y el registro de la energía consumida. Los componentes esenciales de un tablero eléctrico abarcan el gabinete, los rieles metálicos, las barras conductoras, los interruptores automáticos y los interruptores diferenciales. Hay diversos tipos de tableros eléctricos, como los de baja tensión, media tensión y distribución, cada uno diseñado para aplicaciones específicas. Estos tableros pueden incluir características adicionales, como interruptores generales automáticos, protección contra sobretensiones y dispositivos diferenciales. Al seleccionar un tablero eléctrico, es imperativo considerar las necesidades particulares de la instalación eléctrica, la carga a distribuir y las regulaciones de seguridad correspondientes. La consulta con un profesional y la elección de componentes certificados son pasos cruciales para asegurar su correcto funcionamiento y la seguridad tanto de las personas como de los equipos eléctricos [1].</p>
+                        <p class="fs-6 mb-4">En este reporte, se presentará el diseño de un tablero eléctrico, para posteriormente conectar 3 circuitos: circuito de enclavamiento, enclavamiento en cascada y un sistema de arranque y paro de un motor monofasico. Un tablero eléctrico, también llamado panel de control o panel eléctrico, desempeña un papel crucial en cualquier sistema eléctrico. Su función principal radica en supervisar y repartir la electricidad en un edificio o sistema eléctrico específico. A la vez, cumple con la tarea de salvaguardar contra sobrecargas, cortocircuitos y otros incidentes eléctricos, al mismo tiempo que posibilita la administración y el registro de la energía consumida. Los componentes esenciales de un tablero eléctrico abarcan el gabinete, los rieles metálicos, las barras conductoras, los interruptores automáticos y los interruptores diferenciales. Hay diversos tipos de tableros eléctricos, como los de baja tensión, media tensión y distribución, cada uno diseñado para aplicaciones específicas. Estos tableros pueden incluir características adicionales, como interruptores generales automáticos, protección contra sobretensiones y dispositivos diferenciales. Al seleccionar un tablero eléctrico, es imperativo considerar las necesidades particulares de la instalación eléctrica, la carga a distribuir y las regulaciones de seguridad correspondientes. La consulta con un profesional y la elección de componentes certificados son pasos cruciales para asegurar su correcto funcionamiento y la seguridad tanto de las personas como de los equipos eléctricos [1].</p>
                         <p class="fs-6 mb-4">If you</p>
                         
                         <p id="materiales">
@@ -94,30 +94,44 @@
                         <p class="fs-6 mb-4">8 pulsadores y un interruptor de paro de emergencia</p>
                         <p class="fs-6 mb-4">Fuente de alimentación DC</p>
                         <p class="fs-6 mb-4">Relevadores</p>
-                        <p class="fs-6 mb-4">Interruptor termomagnetico</p>
+                        <p class="fs-6 mb-4">Interruptor termomagnetico, contactor principal.</p>
                         <p class="fs-6 mb-4">Tornillos y desarmadores</p>
                        
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Los diagramas para los circuitos de la practica fueron dados por el docente Huber Girón Nieto, inicialmente se construyeron los circuitos en físico antes de realizar las simulaciones, debido por una cuestión de logística respecto al programa.</p>
-                        <p class="fs-6 mb-4">Los circuitos se armaron en orden numérico. Iniciando con la adquisición de la clavija y su posterior acondicionamiento de cableado para poder alimentar los circuitos. Posteriormente, se conectó el circuito 1) en el que únicamente se debía conectar un led entre la línea y el neutro, 2) al circuito anterior se le debió de agregar un interruptor entre la línea y el led, 3) al circuito anterior se le agregó un led en paralelo al led ya instalado, 4) uno de los led en paralelo se desconectó para poder instalarlo en serie entre el interruptor y el neutro, 5) Consistió en retirar uno de los led y agregar un interruptor en paralelo al ya existente y con esto poder crear el apartado lógico de una compuerta or, 6) Se cambio la configuración en paralelo de los interruptores a una en serie, con lo que se aplica la lógica de una comporta and, 7) Este circuito consistió en conectar en paralelo dos circuitos idénticos basados en el circuito 2), 8) Se realizó un circuito en escalera, 9) El circuito consistió en tener un interruptor de encendido y enclavado, uno para desenclavar el circuito y un led que indique si el circuito esta cerrado y enclavado o no, para ello se conectó la salida del led al energizado del contactor y una salida normalmente abierta del mismo a la misma alimentación para poderlo enclavar, el botón de apagado iba conectado a la línea en un contacto normalmente cerrado, para posteriormente conectar en paralelo la entrada normalmente abierta del contactor y el interruptor de encendido, el interruptor de encendido permitía la energización del led al darle la energía inicial al contactor para activarse.</p>
+                        <p class="fs-6 mb-4"> .</p>
+                        <p class="fs-6 mb-4"></p>
                         
                             <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación de los circuitos</h1>
                             <p class="fs-6 mb-4">Para la simulación se utilizó el software FluidSIM</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Circuito1.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Circuito de enclavamiento</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito2.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Circuito de enclavamiento en cascada</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito3.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 3. Arranque y paro de un motor monofasico</p>
+
                             <!--<p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/DCircuito.png" alt="..." /></figure>
+                        
                     
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Para el diseño del tablero se utilizó SolidWorks y la cortadora laser para cortar las piezas en MDF</p>
-                            <p class="fs-6 mb-4">En cuanto al tablero el profesor nos proporcionó un diagrama para conectar la fuente de alimentación DC, los interruptores y demás componentes.</p>
+                            <p class="fs-6 mb-4">Para el diseño del tablero se utilizó SolidWorks y la cortadora laser para cortar las piezas en MDF.</p>
+                            <p class="fs-6 mb-4">En cuanto al tablero, él profesor nos proporcionó un diagrama para conectar la fuente de alimentación DC, los interruptores y demás componentes.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ensambletablero.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Ensamble del tablero en SolidWorks</p>
+                    
                     
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Los diagramas de los circuitos fueron proporcionados por el docente Huber Girón Nieto. Inicialmente, se construyeron los circuitos físicamente antes de realizar las simulaciones debido a razones logísticas relacionadas con el programa. Los circuitos se ensamblaron en orden numérico. Se comenzó adquiriendo la clavija y preparando el cableado para alimentar los circuitos. A continuación, se conectaron los circuitos de la siguiente manera:</p>
-                            <p class="fs-6 mb-4">Conectar un led entre la línea y el neutro. Añadir un interruptor entre la línea y el led del circuito anterior. Agregar un led en paralelo al ya instalado en el circuito anterior. Desconectar uno de los leds en paralelo para instalarlo en serie entre el interruptor y el neutro. Eliminar un led y añadir un interruptor en paralelo al existente, creando la lógica de una compuerta OR. Cambiar los interruptores en paralelo a una configuración en serie, aplicando la lógica de una compuerta AND. Y conectar en paralelo dos circuitos idénticos basados en el circuito. Crear un circuito en escalera. Construir un circuito de enclavamiento con interruptores de encendido y apagado, y un led indicador.</p>
+                            <p class="fs-6 mb-4">Despues de tener todas las partes del tablero cortadas, se procedió a armarlo y pegarlo en el area de trabajo. Conectarle los cables, el interruptor termomagnetico del circuito, botones, focos y las demás materiales. En las siguientes figuras se puede observar el tablero con sus componentes</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tableroar1.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Montaje del tablero</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tableroarfin.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 3. Tablero listo para las prácticas de enclavamiento (vista interna)</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/vistatablero.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 4. Vista del tablero finalizado</p>
                             
 
                         <p id="resultados">
@@ -126,8 +140,20 @@
                         <p class="fs-6 mb-4">Video de evidencia</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
                             <source src="video/Circuito1.mp4" type="video/mp4">
-                            <source src="video/Simulacion.mp4" type="video/mp4">
                         </video></p></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Video 4. Prendido y apagado de un led (enclavamiento)</p>
+                            
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/circuito3.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Video 4. Prendido y apagado de leds (enclavamiento en cascada)</p>
+                            
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/circuito4.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4" style="text-align: center;">Video 5: Arranque y paro de un motor</p>
+                            
+                       
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
