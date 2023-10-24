@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 4 | Ibero Puebla</title>
+        <title>Práctica 5 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,23 +51,21 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica 4: Motores</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 5: Neumatica e Hidraulica</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/brobot.jpg" alt="..." />
                             <div class="ms-2">
                                 <div class="fw-bold">Juan Carlos Guauxochitl Cossío, Andreas Sotomayor Ochoa, Jose Francisco López Hernández y Jorge Hanan Guerrero</div>
-                                <div class="text-muted">Estudiantes de Ingeniería Mecatrónica e Ingnería Automotriz</div>
+                                <div class="text-muted">Estudiantes de Ingeniería Mecatrónica e Ingenería Automotriz</div>
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 22, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 27, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Motores AC trifásicos</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Motores DC</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Relevadores</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Bobinas</a>
-
+                        <a class="badge bg-primary text-decoration-none link-light" >Actuadores</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Compresores</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Valvulas</a>
                     </header>
                 </div>
             </section>   
@@ -80,107 +78,131 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4"> En esta práctica se realizará cuatro circuitos para el uso y entendimiento de los motores en AC y DC, donde se crearán 4 circuitos para  poder observar el funcionamiento en conjunto de los motores y los componentes que se usarán para emular las compuertas lógicas, además de probar en cada circuito el botón que será un paro de emergencia el cual como dice su nombre detendrá el sistema  sin importar el proceso que estuviera hecho.</p>
-                       <!-- <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
+                        <p class="fs-6 mb-4"> En esta práctica, se llevaron a cabo una serie de tareas relacionadas con circuitos neumáticos e hidráulicos, con el objetivo de identificar componentes, realizar simulaciones y construir circuitos físicos. Comenzando con el circuito 1, se identificaron todos sus componentes, y se creó una tabla comparativa que detallaba la función de cada uno, su simbología y se incluyeron fotos de los componentes reales. Luego, se procedió a realizar una simulación en Fluidsim del circuito 1 para comprender su funcionamiento. Además, se construyó físicamente el circuito neumático y se grabó un video que documentaba su funcionamiento, el cual se adjuntó al reporte de la práctica.</p>
+                        <p class="fs-6 mb-4"> En cuanto al circuito 2, se repitió el proceso de identificación de componentes y se creó una tabla comparativa con la función, simbología y fotos de los componentes reales. Se realizó una simulación en Fluidsim para comprender su operación.</p>
+                        <p class="fs-6 mb-4"> En el circuito 3, nuevamente se identificaron los componentes, se creó una tabla comparativa detallada y se llevó a cabo una simulación en Fluidsim. Además, se construyó físicamente el circuito neumático y se documentó su funcionamiento en un video que se enlazó al reporte.
+                            Por último, en el circuito 4, se siguió el proceso de identificación de componentes, tabla comparativa, simulación en Fluidsim.</p>
+                       
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Objetivo General -</h2>
-                        <p class="fs-6 mb-4">Conocer, investigar e identificar el funcionamiento de los motores DC, AC (monofásicos y trifásicos).</p>
-                       <!--<h2 class="fw-bolder mb-4 mt-5 fs-5" >- Objetivos especificos -</h2>
-                        <p class="fs-6 mb-4">•	Identifica cada uno de los componentes de cada circuito y realiza una tabla comparativa con su función, simbología y foto de componente real.</p>
-                        <p class="fs-6 mb-4">•	Realiza la simulación de cada circuito, graba un video del funcionamiento y adjunta mediante un enlace al reporte de práctica </p>
-                        <p class="fs-6 mb-4">•	Contesta las preguntas de cada circuito </p>-->
+                        <p class="fs-6 mb-4">Conocer, investigar e identificar los componentes de los sistemas neumáticos e hidráulicos.</p>
 
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Los motores trifásicos son componentes esenciales en numerosas aplicaciones industriales y comerciales, ya que proporcionan una fuente de energía mecánica para una variedad de maquinarias y sistemas. Comprender su funcionamiento, control y mantenimiento es fundamental para garantizar un rendimiento eficiente y seguro para los entornos industriales. En esta práctica explicaremos cómo conectar, arrancar y controlar un motor trifásico. </p>
+                        <p class="fs-6 mb-4">En esta práctica, se abordaron cuatro circuitos, dos neumáticos y dos hidráulicos, con el objetivo de identificar sus componentes y realizar simulaciones en Fluidsim. Además, se construyeron físicamente dos circuitos neumáticos y se documentó su funcionamiento en videos. Este informe resumirá los hallazgos y experiencias en cada circuito, proporcionando una visión integral de la exploración de sistemas neumáticos e hidráulicos que combina teoría y práctica.</p>
+                        <p class="fs-6 mb-4">La neumática es una rama de la ingeniería que se centra en el estudio y aplicación del aire comprimido para el control y automatización de sistemas mecánicos. Utiliza aire comprimido para generar movimientos, controlar válvulas y realizar trabajos mecánicos en una amplia gama de aplicaciones industriales, como la manufactura, la automatización y la robótica.</p>
+                        <p class="fs-6 mb-4">Por otro lado, la hidráulica es una disciplina similar, pero en lugar de aire comprimido, utiliza fluidos incompresibles, generalmente aceite, para transmitir energía y realizar trabajos mecánicos. La hidráulica se emplea en maquinaria pesada, sistemas de dirección y frenos en vehículos, así como en aplicaciones industriales que requieren una alta potencia y precisión en la transmisión de fuerza.</p>
+                        <p class="fs-6 mb-4">Ambas tecnologías se utilizan para controlar y automatizar procesos, realizar movimientos precisos y aplicar fuerza en una amplia gama de aplicaciones, desde la industria manufacturera hasta la aeronáutica y la maquinaria pesada, mejorando la eficiencia y la productividad en diversos sectores.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Los materiales que se usaron fueron para cada práctica fueron:</p>
-                        <p class="fs-6 mb-4">●	Circuito 2</p>
-                        <p class="fs-6 mb-4">3 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), 2 relevadores, un contactor, una clavija, un interruptor termomagnético, motor DC, un paro de emergencia, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
-                        <p class="fs-6 mb-4">●	Circuito 3</p>
-                        <p class="fs-6 mb-4">3 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), un relevador, línea trifásica, un interruptor termomagnético, un paro de emergencia, motor trifasico, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
-                        <p class="fs-6 mb-4">●	Circuito 4</p>
-                        <p class="fs-6 mb-4">Un led, 3 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), un relevador, línea trifásica, un contactor, un interruptor termomagnético, un paro de emergencia, motor trifasico, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
-                        <p class="fs-6 mb-4">●	Circuito 5</p>
-                        <p class="fs-6 mb-4">3 leds, 2 interruptores con capacidad de normalmente abierto y normalmente cerrado (con la posibilidad de alternar entre estados), 2 botones selector de 2 posiciones, 3 relevadores, línea trifásica, 2 contactores, un interruptor termomagnético, un paro de emergencia, motor trifasico, destornilladores, pinzas para pelar y cables pertinentes para el armado de cada circuito.</p>
+                        <p class="fs-6 mb-4">Para cada uno de los cuatro circuitos (Cilindros de Simple y Doble Efecto, Neumáticos e Hidráulicos):</p>
+                        <p class="fs-6 mb-4">•	Tabla comparativa (para registrar función, simbología y fotos de componentes reales).
+                            <br>•	Computadora con software Fluidsim para simulación.
+                            <br>•	Componentes reales del circuito, que incluyen cilindros, válvulas, tuberías, conectores, etc.
+                            </p>
+                        <p class="fs-6 mb-4">Para la construcción física de los circuitos neumáticos (Circuito 1 y Circuito 3): <br> 4. Elementos de conexión (tubos, mangueras, racores).•	Compresor de aire.
+                            <br>•	Manómetros para medir la presión de aire.
+                            <br>•	Elementos de soporte y montaje (bases, abrazaderas, soportes).
+                            <br>•	Herramientas para el ensamblaje (llaves, destornilladores).
+                            </p>
                         <p class="fs-6 mb-4">En la figura 1 se observa los componentes utilizados en esta práctica.</p>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tablac1.png" alt="" /></figure>
-                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tablac2.png" alt="" /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla_1.png" alt="" /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla_2.png" alt="" /></figure>
                         <p class="fs-6 mb-4" style="text-align: center;">Fig. 1. Tabla comparativa de los componentes usados</p>
 
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Se inicio realizando las simulaciones de los siguientes ejercicios, los cuales tienen como finalidad que comprobemos el funcionamiento de los distintos componentes que se van a emplear en los ejercicios armados en físico. </p>
+                        <p class="fs-6 mb-4">La simulación y construcción física de sistemas son dos facetas esenciales en la ingeniería y automatización industrial. En esta práctica, nos embarcamos en un viaje para explorar la neumática y la hidráulica a través de ambas dimensiones: la simulación en Fluidsim y la construcción física de circuitos. La simulación nos permite comprender y analizar el comportamiento teórico de sistemas complejos antes de su implementación, mientras que la construcción física nos conecta con la realidad, proporcionando una experiencia tangible de estos sistemas. </p>
                         <!--<p class="fs-6 mb-4"> comentario </p>-->
                                 
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
                             <p class="fs-6 mb-4">A continuación se muestran los diagramas que se llevaron a cabo en la práctica, provistos por el docente.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito1.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Circuito 1</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito2.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 3. Circuito 2</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito3.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 4. Circuiot 3</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito4.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 5. Circuito 4</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito5.png" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 6. Circuito 5</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito12.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 2. Circuito 1 y 2</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/circuito34.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 3. Circuito 3 y 4</p>
                             
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
                             <p class="fs-6 mb-4">A continuación se muestran los videos de la simulación.</p>
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Circuito 1 (Cilindro de Simple Efecto Neumático):</h1>
+                            <p class="fs-6 mb-4">•	El cilindro de simple efecto neumático funciona de manera unidireccional. Cuando se aplica presión de aire, el pistón se desplaza en una dirección específica, realizando trabajo mecánico, como empujar un objeto.
+                                <br>•	El retorno del pistón a su posición inicial generalmente se logra a través de un resorte o la gravedad, ya que el cilindro no aplica fuerza en la dirección de regreso.
+                                <br>•	Es comúnmente utilizado en aplicaciones donde se requiere un movimiento unidireccional, como máquinas de embalaje o transportadores de productos.
+                                </p>
                             <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                                 <source src="video/simulacion1.mp4" type="video/mp4">
                             </video></p></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Video 1: Simulación del motor DC con una dirección</p>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 1: Simulación circuito 1</p>
                             <br>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Circuito 2 (Cilindro de Simple Efecto Hidráulico): </h1>
+                            <p class="fs-6 mb-4">•	Similar al cilindro neumático de simple efecto, el cilindro de simple efecto hidráulico opera de manera unidireccional, pero en lugar de aire comprimido, utiliza un fluido hidráulico para generar movimiento.
+                                <br>•	Cuando se aplica presión al fluido, el pistón se mueve en una dirección específica, realizando trabajo mecánico. El retorno se logra generalmente a través de un resorte o la gravedad.
+                                <br>•	Es común en aplicaciones donde se requiere un movimiento lineal unidireccional con alta fuerza, como sistemas de frenado en vehículos o prensas industriales.
+                                </p>
                             <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                                 <source src="video/simulacion2.mp4" type="video/mp4">
                             </video></p></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Video 2: Simulación del motor DC con dos direcciones</p>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 2: Simulación circuito 2</p>
                             <br>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Circuito 3 (Cilindro de Doble Efecto Neumático):</h1>
+                            <p class="fs-6 mb-4"> •	El cilindro de doble efecto neumático es bidireccional. Puede realizar trabajo mecánico tanto al extender como al retraer el pistón, ya que el aire comprimido puede aplicarse en ambas direcciones.
+                                <br>•	El pistón se mueve hacia adelante cuando se aplica presión de aire en un extremo y se mueve hacia atrás cuando se aplica presión en el otro extremo.
+                                <br>•	Se utiliza en aplicaciones donde se requiere un movimiento bidireccional, como máquinas herramienta y sistemas de automatización.
+                                </p>
                             <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                                 <source src="video/simulacion3.mp4" type="video/mp4">
                             </video></p></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Video 3: Simulación del motor monofásico con enclavamiento</p>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 3: Simulación circuito 3</p>
                             <br>
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Circuito 4 (Cilindro de Doble Efecto Hidráulico):</h1>
+                            <p class="fs-6 mb-4">•	Similar al cilindro de doble efecto neumático, el cilindro de doble efecto hidráulico es bidireccional, pero utiliza un fluido hidráulico en lugar de aire comprimido.
+                                <br>•	El pistón se desplaza tanto hacia adelante como hacia atrás, generando fuerza en ambas direcciones cuando se aplica presión de fluido en los extremos correspondientes.
+                                <br>•	Es común en aplicaciones donde se necesita alta potencia y precisión en el movimiento bidireccional, como en maquinaria industrial y sistemas de elevación.
+                                 </p>
                             <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                                 <source src="video/simulacion4.mp4" type="video/mp4">
                             </video></p></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Video 4: Simulación de motor trifásico con una dirección</p>
-                            <br>
-                            <figure class="mb-4" align="center"><video width="500" height="300"  controls>
-                                <source src="video/simulacion5.mp4" type="video/mp4">
-                            </video></p></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Video 5: Simulación del motor trifásico con dos direcciones</p>
+                            <p class="fs-6 mb-4" style="text-align: center;">Video 4: Simulación circuito 4</p>
                             <br>
 
                                 <!--<p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>-->
             
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Para la construcción de los circuitos se usaron los diagramas (circuito 1 al 5) y en las siguientes imagenes se pueden observar como quedaron en el tablero.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcircuito2.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcircuito4.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pcircuito5.jpg" alt="..." /></figure>
-                            <p class="fs-6 mb-4" style="text-align: center;">Fig. 7. Circuitos armados en el tablero</p>
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción del Sistema 1 - Cilindro de Simple Efecto Neumático:</h1>
+                            <p class="fs-6 mb-4">•	Identificación de componentes: Comienza por identificar y separar todos los componentes necesarios, como el cilindro, la válvula de control, los tubos y los conectores.
+                                <br>•	Montaje del cilindro: Monta el cilindro en una base o soporte adecuado utilizando las herramientas necesarias.
+                                <br>•	Conexión de la válvula: Conecta la válvula de control al cilindro utilizando tubos y conectores. Asegúrate de que las conexiones estén bien ajustadas.
+                                <br>•	Conexión al compresor: Conecta el sistema al compresor de aire utilizando tubos y conectores. Asegúrate de que el compresor esté encendido y ajusta la presión según sea necesario.
+                                <br>•	Prueba y ajuste: Activa la válvula de control para que el cilindro se mueva. Observa su funcionamiento y realiza los ajustes necesarios en la presión de aire y la válvula para lograr el comportamiento deseado.
+                                 </p>
+
+
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción del Sistema 3 - Cilindro de Doble Efecto Neumático:</h1>
+                            <p class="fs-6 mb-4">La construcción del Sistema 3 es similar al Sistema 1, pero con un cilindro de doble efecto que permite el movimiento bidireccional. Los pasos son prácticamente los mismos, pero debes prestar atención a las diferencias en la identificación de componentes y la conexión del cilindro.</p>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Se puede ver como los circuitos funcionan adecuadamente donde se evitan hacer cortocircuito por una mala conexión entre los componentes, además de poder ver el funcionamiento y el control de los motores AC y DC como se pueden ver en los siguientes videos:</p>
-                        <p class="fs-6 mb-4">Videos de evidencia</p>
+                        <p class="fs-6 mb-4">Los resultados de la práctica han sido altamente satisfactorios y enriquecedores. A través de la identificación minuciosa de componentes, la realización de simulaciones en Fluidsim y, en algunos casos, la construcción física de circuitos neumáticos e hidráulicos se ha logrado un profundo entendimiento de estos sistemas esenciales en la ingeniería y automatización industrial. </p>
+                        <p class="fs-6 mb-4">La creación de tablas comparativas detalladas ha permitido una visualización clara de la función y simbología de los componentes reales, lo que se traduce en una comprensión sólida de estos sistemas. La simulación en Fluidsim ha proporcionado una visión teórica invaluable del funcionamiento de los circuitos, preparando a los participantes para abordar situaciones prácticas con mayor confianza.</p>
+                        <p class="fs-6 mb-4">Si bien la construcción física de circuitos neumáticos ha enriquecido la experiencia al proporcionar una dimensión tangible, es importante señalar que los circuitos hidráulicos (Circuito 2 y Circuito 4) no pudieron ser construidos debido a la falta de equipo necesario. Esto subraya la importancia de contar con los recursos adecuados en proyectos de este tipo.</p>
+                        
+                        <p class="fs-6 mb-4">Sistema 1</p>
                         <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                             <source src="video/videocircuito3.mp4" type="video/mp4">
                         </video></p></figure> 
-                        <p class="fs-6 mb-4" style="text-align: center;">Video 6: Movimiento de un motor bifásico</p>
         
+                        <p class="fs-6 mb-4">Sistema 2</p>
                         <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                             <source src="video/videocircuito4.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-6 mb-4" style="text-align: center;">Video 7: Movimiento de un motor trifásico (solo gira en un sentido)</p>
-
+                        
+                        <p class="fs-6 mb-4">Sistema 3</p>
                         <figure class="mb-4" align="center"><video width="500" height="300"  controls>
                             <source src="video/videocircuito5.mp4" type="video/mp4">
                         </video></p></figure>
@@ -188,8 +210,9 @@
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Trabajamos con circuitos eléctricos de corriente alterna (AC) utilizando componentes como interruptores, LEDs y relés. Empleamos una variedad de materiales, incluyendo una laptop con el programa FluidSIM para simulaciones, LEDs AC, interruptores con capacidad de normalmente abierto y normalmente cerrado, un relevador, una clavija, destornilladores, pinzas para pelar y cables. Construimos ocho circuitos diferentes para explorar desde conexiones básicas hasta compuertas lógicas, configuraciones en escalera y aplicamos un mecanismo de bloqueo con relés para crear memoria en el circuito. En conjunto, estas actividades enriquecieron nuestra comprensión de los fundamentos eléctricos y su aplicabilidad en situaciones prácticas.</p>
-                        
+                        <p class="fs-6 mb-4">En esta práctica, se lograron satisfactoriamente los objetivos específicos planteados, que involucraban la identificación de componentes, la realización de simulaciones y, en algunos casos, la construcción física de circuitos neumáticos e hidráulicos. Se realizaron detalladas tablas comparativas que permitieron entender la función y la simbología de los componentes reales en cada uno de los cuatro circuitos analizados.</p>
+                        <p class="fs-6 mb-4">La simulación en Fluidsim proporcionó una comprensión profunda del funcionamiento teórico de estos sistemas, lo que resulta invaluable en la formación de ingenieros y técnicos en el campo de la automatización industrial. Los videos que documentaron el funcionamiento de los circuitos construidos físicamente brindaron una visión tangible de la aplicación práctica de los conocimientos adquiridos en la teoría.</p>
+                        <p class="fs-6 mb-4">No obstante, es importante destacar que los circuitos de hidráulica (Circuito 2 y Circuito 4) no pudieron ser construidos físicamente debido a la falta de equipo necesario. Esto subraya la importancia de la disponibilidad de recursos en proyectos de este tipo, y cómo la simulación puede desempeñar un papel crucial cuando los recursos físicos son limitados.</p>
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
